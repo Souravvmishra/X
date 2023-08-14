@@ -1,10 +1,12 @@
 import React from "react";
-import { Landing } from "../components";
+import { Landing, Stats, WhyUs } from "../components";
 
 const HomePage = () => {
   return (
     <>
       <Landing />
+      <Stats />
+      <WhyUs />
     </>
   );
 };

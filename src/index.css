@@ -2,4 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 :root {
+  background-color: #000;
+  color: #fff;
+}
+body,
+html {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffa800;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #d89000;
 }
