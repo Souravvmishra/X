@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const Stats = () => {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    if (count < 123456) {
+      const timer = setTimeout(() => {
+        setCount(count + 1);
+      }, 0.2); // You can adjust the duration of each step here
+
+      return () => clearTimeout(timer);
+    }
+  }, [count]);
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
       <div className="flex flex-col lg:items-center lg:flex-row">
@@ -15,7 +26,7 @@ const Stats = () => {
             ></lord-icon>
           </div>
           <h3 className="text-2xl leading-none sm:leading-none font-extrabold text-white sm:text-4xl xl:text-6xl">
-            9 312 435
+            {count}
             <br />
             <span className=" text-[20px] m-0 bg-gradient-to-r from-[#9F8CED] from-1% via-[#FA7C0B] via-90% to-[#9DE8EE] to-9% text-transparent bg-clip-text">
               Posts Created

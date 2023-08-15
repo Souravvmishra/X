@@ -16,20 +16,25 @@ const Navbar = () => {
         </div>
         <div className="sm:flex justify-center items-center hidden w-auto gap-7 mr-10">
           <Link
-            href={"/"}
+            to={"/"}
             className="text-[16px] font-medium text-white flex justify-center items-center gap-1"
           >
             Home
           </Link>
-          <Link className="text-[16px] font-medium text-white" href={"/"}>
+          <Link
+            className="text-[16px] font-medium text-white"
+            to={"/dashboard"}
+          >
             Create
           </Link>
-          <Link className="text-[16px] font-medium text-white" href={"/"}>
+          <Link className="text-[16px] font-medium text-white" to={"/about"}>
             About
           </Link>
-          <button className="border-[#FFA800] border-[2px] text-[#FFA800] text-[16px] rounded-[100px] px-[16px] py-[10px]">
-            Get Started
-          </button>
+          <Link to={"/register"}>
+            <button className="border-[#FFA800] border-[2px] text-[#FFA800] text-[16px] rounded-[100px] px-[16px] py-[10px]">
+              Get Started
+            </button>
+          </Link>
         </div>
         <button
           className="flex sm:hidden flex-col mr-10"
@@ -80,23 +85,28 @@ const Navbar = () => {
       {isActive && (
         <div className="fixed bg-[#26262693] backdrop-blur-md left-0 top-[84px]  flex justify-center items-center flex-col  z-[2000] w-[100vw] h-[100vh] gap-10 ">
           <Link
-            href={"/"}
+            to={"/"}
             className="text-[20px] font-medium text-white flex justify-center items-center gap-1"
           >
             Home
           </Link>
-          <Link className="text-[20px] font-medium text-white" href={"/"}>
+          <Link
+            className="text-[20px] font-medium text-white"
+            to={"/dashboard"}
+          >
             Create
           </Link>
-          <Link className="text-[20px] font-medium text-white" href={"/"}>
+          <Link className="text-[20px] font-medium text-white" to={"/about"}>
             About
           </Link>
-          <Link className="text-[20px] font-medium text-white" href={"/"}>
+          <Link className="text-[20px] font-medium text-white" to={"/contact"}>
             Contact
           </Link>
-          <button className="border-[#FFA800] border-[2px] text-[#FFA800] text-[20px] rounded-[100px] px-[16px] py-[10px]">
-            Get Started
-          </button>
+          <Link to="/register">
+            <button className="border-[#FFA800] border-[2px] text-[#FFA800] text-[20px] rounded-[100px] px-[16px] py-[10px]">
+              Get Started
+            </button>
+          </Link>
         </div>
       )}
     </>

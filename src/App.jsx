@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import { Navbar, Footer, ComingSoon } from "./components";
 import {
@@ -38,6 +38,7 @@ const routesData = [
 ];
 
 const App = () => {
+  const location = useLocation();
   return (
     <>
       <Navbar />
@@ -46,7 +47,7 @@ const App = () => {
           <Route key={index} path={route.path} element={route.element} />
         ))}
       </Routes>
-      <Footer />
+      {location.pathname !== "/register" && <Footer />}
     </>
   );
 };
