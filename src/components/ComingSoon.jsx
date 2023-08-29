@@ -19,7 +19,7 @@ const ComingSoon = () => {
         </div>
         <div className=" z-40 ml-[30px] sm:ml-[50px] lg:ml-[150px] whitespace-normal w-auto sm:w-[500px] font-semibold leading-[90px] mt-[40px] text-[12vw] sm:text-[90px] text-[#fff]">
           <span className="bg-gradient-to-r from-[#9F8CED] from-1% via-[#FA7C0B] via-90% to-[#9DE8EE] to-9% text-transparent bg-clip-text">
-            FakeTweetGen
+            TwePic
           </span>{" "}
           Coming Soon ...{" "}
         </div>

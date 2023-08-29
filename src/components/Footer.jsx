@@ -35,9 +35,7 @@ const Footer = () => {
           <div className="sm:w-[300px] flex flex-col justify-start items-start gap-[20px]">
             <div className="flex justify-center items-center content-center w-[180px] ml-10">
               <img src={Logo} className=" object-contain w-10 " />
-              <span className="text-lg text-white font-bold ml-2">
-                FakeTweetGen
-              </span>
+              <span className="text-lg text-white font-bold ml-2">TwePic</span>
             </div>
             <span className="text-[#999999]">Get latest updates</span>
             <input
@@ -48,7 +46,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="w-[100%] text-white bg-black p-[20px] flex justify-center items-center">
-          © 2023 by FakeTweetGen
+          © 2023 by TwePic
         </div>
       </div>
     </>

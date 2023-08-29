@@ -10,9 +10,7 @@ const Navbar = () => {
       <nav className="w-[100vw] h-[84px] fixed bg-[#26262693] backdrop-blur-md z-50 flex justify-between items-center overflow-hidden">
         <div className="flex justify-center items-center content-center w-[180px] ml-10">
           <img src={Logo} className=" object-contain w-10 " />{" "}
-          <span className="text-lg text-white font-bold ml-2">
-            FakeTweetGen
-          </span>
+          <span className="text-lg text-white font-bold ml-2">TwePic</span>
         </div>
         <div className="sm:flex justify-center items-center hidden w-auto gap-7 mr-10">
           <Link

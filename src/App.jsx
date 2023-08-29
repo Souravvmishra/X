@@ -47,7 +47,8 @@ const App = () => {
           <Route key={index} path={route.path} element={route.element} />
         ))}
       </Routes>
-      {location.pathname !== "/register" && <Footer />}
+      {location.pathname !== "/register" ||
+        (location.pathname !== "/dashboard" && <Footer />)}
     </>
   );
 };
